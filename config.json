@@ -1,0 +1,50 @@
+{
+  "general": {
+    "random_seed": null,
+    "keep_temp_files": false,
+    "log_level": "INFO"
+  },
+  "features": {
+    "voiceover": true,
+    "music": true,
+    "captions": true,
+    "onscreen_text": true,
+    "clips": true
+  },
+  "paths": {
+    "clips": "clips",
+    "voiceovers": "voiceovers",
+    "voices": "voices",
+    "script": "script",
+    "music": "music",
+    "output": "output",
+    "temp": "temp",
+    "logs": "logs",
+    "settings": "settings"
+  },
+  "ffmpeg": {
+    "ffmpeg_path": "ffmpeg",
+    "ffprobe_path": "ffprobe",
+    "threads": 0,
+    "log_level": "error"
+  },
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "codec": "libx264",
+    "preset": "veryfast",
+    "crf": 20,
+    "profile": "high",
+    "pixel_format": "yuv420p"
+  },
+  "audio": {
+    "codec": "aac",
+    "bitrate": "192k",
+    "sample_rate": 48000
+  },
+  "output": {
+    "name_prefix": "video_",
+    "digits": 3
+  }
+}

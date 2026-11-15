@@ -1,0 +1,55 @@
+{
+  "_help": "items: one text per line as  \"start | stop | text\"  (times: seconds, M:SS or H:MM:SS). Use \\n inside the text for a new line. Lines starting with # are ignored. Test the look with:  py -3.12 main.py --text-preview",
+  "check_ffmpeg_filter": true,
+  "items": ["00:05 | 00:20 | Coming Before the Prince of Peace",
+            "00:37 | 00:52 | Thanksgiving for Mercy We Did Not Earn",
+            "01:05 | 01:20 | Confession and Surrender",
+            "01:35 | 01:50 | For Those Caught in the Middle of War",
+            "02:17 | 02:32 | For Leaders and for Justice",
+            "02:56 | 03:11 | Peace That Guards the Heart",
+            "03:24 | 03:39 | Our Declaration of Hope"],
+  "position": {
+    "anchor": "top_center",
+    "margin_x_px": 120,
+    "margin_y_px": 90,
+    "x_offset_px": 0,
+    "y_offset_px": 200,
+    "side_margin_px": 160
+  },
+  "style": {
+    "font": "Poppins Black",
+    "size": 95,
+    "bold": true,
+    "italic": false,
+    "color": "#FFFFFF",
+    "opacity": 1.0,
+    "text_transform": "none",
+    "letter_spacing_px": 0,
+    "outline_px": 3,
+    "outline_color": "#000000",
+    "shadow_px": 2,
+    "shadow_color": "#000000",
+    "shadow_opacity": 0.5
+  },
+  "box": {
+    "enabled": true,
+    "color": "#000000",
+    "opacity": 0.55,
+    "padding_px": 22
+  },
+  "glow": {
+    "enabled": false,
+    "color": "#4DE3FF",
+    "size_px": 6,
+    "blur": 12,
+    "opacity": 0.85
+  },
+  "animation": {
+    "mode": "random_once",
+    "fixed": "fade",
+    "pool": ["fade", "pop", "slide_up", "drop", "blur_in", "reveal"],
+    "in_ms": 450,
+    "out_ms": 450,
+    "reveal_word_ms": 160
+  }
+}

@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Your media and generated files (large or private)
+clips/*
+voiceovers/*
+script/*
+music/*
+voices/*
+output/*
+temp/*
+logs/*
+
+# Generated caption files (your corrections live here)
+auto-caption.txt
+auto-caption.previous.txt
+auto-caption.json
+
+# Keep the empty folders in the repo
+!clips/.gitkeep
+!voiceovers/.gitkeep
+!script/.gitkeep
+!music/.gitkeep
+!voices/.gitkeep
+!output/.gitkeep
+!temp/.gitkeep
+!logs/.gitkeep
+
+# Editors and OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

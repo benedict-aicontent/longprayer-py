@@ -1,0 +1,49 @@
+{
+  "source": "auto",
+  "speed": 1.0,
+  "volume_db": 0.0,
+  "pauses": {
+    "between_seconds": 1.0,
+    "lead_seconds": 5.0,
+    "tail_seconds": 20.0
+  },
+  "recorded": {
+    "extensions": [
+      ".mp3",
+      ".wav",
+      ".m4a",
+      ".flac",
+      ".ogg",
+      ".aac",
+      ".opus"
+    ],
+    "order": "natural"
+  },
+  "script": {
+    "extensions": [
+      ".txt"
+    ],
+    "multiply_pause_by_blank_lines": true
+  },
+  "piper": {
+    "command": [
+      "py",
+      "-3.12",
+      "-m",
+      "piper"
+    ],
+    "model_flag": "-m",
+    "output_flag": "-f",
+    "text_mode": "argument",
+    "voice": null,
+    "extra_args": [],
+    "use_cache": true,
+    "timeout_seconds": 300
+  },
+  "normalize": {
+    "mode": "whole_track",
+    "target_lufs": -16.0,
+    "true_peak_db": -1.5,
+    "loudness_range": 11.0
+  }
+}

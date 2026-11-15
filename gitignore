@@ -1,0 +1,68 @@
+# ---------------------------------------------------------------
+# TheFaithFuel Long Video Automation - .gitignore
+# ---------------------------------------------------------------
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# Secrets (never commit keys or tokens)
+.env
+.env.*
+!.env.example
+
+# Your media and generated files (large or private).
+# The folders stay in the repo (see the .gitkeep lines below); their contents do not.
+clips/*
+voiceovers/*
+script/*
+music/*
+voices/*
+output/*
+temp/*
+logs/*
+
+# Stray media / subtitle files created in the project root while testing
+/*.mp4
+/*.mov
+/*.mkv
+/*.mp3
+/*.wav
+/*.ass
+/*.onnx
+/*.onnx.json
+
+# Generated caption files (your corrections live here)
+auto-caption.txt
+auto-caption.previous.txt
+auto-caption.json
+
+# Speech-recognition models, if you set whisper.model_dir to a folder inside the project
+models/
+whisper_models/
+
+# Keep the empty folders in the repo
+!clips/.gitkeep
+!voiceovers/.gitkeep
+!script/.gitkeep
+!music/.gitkeep
+!voices/.gitkeep
+!output/.gitkeep
+!temp/.gitkeep
+!logs/.gitkeep
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store

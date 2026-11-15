@@ -1,0 +1,47 @@
+{
+  "target_duration_seconds": 180,
+  "extensions": [".mp4", ".mov", ".mkv", ".avi", ".webm", ".m4v"],
+
+  "order": "random",
+  "when_exhausted": "reshuffle",
+  "avoid_back_to_back_repeat": true,
+
+  "clip_duration": {
+    "min_seconds": 15.0,
+    "max_seconds": 30.0
+  },
+  "trim_position": "random",
+  "short_clip_policy": "use_whole",
+
+  "fit_mode": "fill",
+
+  "tracks_muted": false,
+  "clip_audio_volume": 1.0,
+
+  "transition": {
+    "enabled": true,
+    "mode": "random_once",
+    "fixed_type": "fade",
+    "duration_seconds": 0.8,
+    "random_pool": [
+      "fade",
+      "dissolve",
+      "fadeblack",
+      "fadewhite",
+      "smoothleft",
+      "smoothright",
+      "wipeleft",
+      "wiperight",
+      "slideleft",
+      "slideright",
+      "circleopen",
+      "radial"
+    ]
+  },
+
+  "join": {
+    "batch_size": 8,
+    "intermediate_preset": "superfast",
+    "intermediate_crf": 18
+  }
+}

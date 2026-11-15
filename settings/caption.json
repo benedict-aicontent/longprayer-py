@@ -1,0 +1,179 @@
+{
+  "source": "faster_whisper",
+  "use_script_text": true,
+  "check_ffmpeg_filter": true,
+  "whisper": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "language": "en",
+    "beam_size": 5,
+    "vad_filter": false,
+    "cpu_threads": 0,
+    "model_dir": null
+  },
+  "edit_file": {
+    "path": "auto-caption.txt",
+    "mode": "generate",
+    "keep_previous": true,
+    "time_decimals": 1
+  },
+  "page": {
+    "max_words": 8,
+    "max_chars": 56,
+    "max_gap_seconds": 0.8,
+    "break_after_sentence": true,
+    "prefer_breaks_at_commas": true,
+    "merge_short_sentences_up_to_words": 2
+  },
+  "timing": {
+    "lead_in_seconds": 0.08,
+    "hold_after_seconds": 0.25,
+    "min_page_seconds": 0.6,
+    "time_offset_seconds": 0.0
+  },
+  "position": {
+    "bottom_margin_px": 120,
+    "y_offset_px": 0,
+    "side_margin_px": 160
+  },
+  "styles": {
+    "base": {
+      "font": "Segoe UI",
+      "size": 88,
+      "bold": true,
+      "italic": false,
+      "color": "#FFFFFF",
+      "opacity": 1.0,
+      "text_transform": "none",
+      "letter_spacing_px": 0,
+      "outline_px": 4,
+      "outline_color": "#000000",
+      "shadow_px": 2,
+      "shadow_color": "#000000",
+      "shadow_opacity": 0.5
+    },
+    "small": {
+      "font": "Georgia",
+      "size": 62,
+      "bold": false,
+      "italic": true,
+      "color": null,
+      "opacity": null,
+      "text_transform": null,
+      "letter_spacing_px": null,
+      "outline_px": null,
+      "outline_color": null,
+      "shadow_px": null,
+      "shadow_color": null,
+      "shadow_opacity": null
+    },
+    "keyword": {
+      "font": "Segoe UI Black",
+      "size": 98,
+      "bold": false,
+      "italic": true,
+      "color": null,
+      "opacity": null,
+      "text_transform": "upper",
+      "letter_spacing_px": null,
+      "outline_px": null,
+      "outline_color": null,
+      "shadow_px": null,
+      "shadow_color": null,
+      "shadow_opacity": null
+    }
+  },
+  "mixed_fonts": {
+    "enabled": true,
+    "apply_to": [
+      "small_words",
+      "keywords"
+    ],
+    "small_words": [
+      "a",
+      "an",
+      "the",
+      "to",
+      "of",
+      "in",
+      "on",
+      "at",
+      "by",
+      "for",
+      "from",
+      "with",
+      "and",
+      "or",
+      "but",
+      "as",
+      "is",
+      "are",
+      "was",
+      "were",
+      "be",
+      "it",
+      "its",
+      "this",
+      "that",
+      "my",
+      "me",
+      "i",
+      "we",
+      "you",
+      "your",
+      "our",
+      "us"
+    ],
+    "keywords": [
+      "god",
+      "jesus",
+      "christ",
+      "lord",
+      "father",
+      "holy",
+      "spirit",
+      "amen",
+      "faith",
+      "grace",
+      "peace",
+      "love",
+      "hope",
+      "mercy",
+      "strength",
+      "blessing"
+    ]
+  },
+  "highlight": {
+    "enabled": true,
+    "color": "#4DE3FF",
+    "after_spoken": "base",
+    "dim_opacity": 0.6,
+    "transition_ms": 70,
+    "bridge_gaps_under_seconds": 0.3
+  },
+  "glow": {
+    "enabled": true,
+    "color": "#4DE3FF",
+    "size_px": 8,
+    "blur": 14,
+    "opacity": 0.9,
+    "apply_to": [
+      "active_word"
+    ]
+  },
+  "animation": {
+    "mode": "random_per_line",
+    "fixed": "pop",
+    "pool": [
+      "fade",
+      "pop",
+      "bounce",
+      "slide_up",
+      "drop",
+      "blur_in"
+    ],
+    "in_ms": 220,
+    "out_ms": 150
+  }
+}
